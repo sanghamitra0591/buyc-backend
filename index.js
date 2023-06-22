@@ -1,13 +1,16 @@
 const express= require("express");
 
+const { connection } = require('./configs/db');
+const { validator } = require("./midddlewares/Validator.middleware");
+const { UserRouter } = require("./routes/User.Route");
+const { carDetailsRouter } = require("./routes/carDetails.route");
+const { OEM_SpecsRoute } = require("./routes/OEM-specs.route");
+
+
 const app= express();
 
 const cors= require("cors");
 
-const { connection } = require('./configs/db');
-
-const { validator } = require("./midddlewares/Validator.middleware");
-const { UserRouter } = require("./Routes/User.Route");
 
 app.use(cors({
     origin: "*"
@@ -23,6 +26,12 @@ app.get("/", (req, res)=>{
 app.use("/user", UserRouter);
 
 app.use(validator);
+
+app.use("/car", carDetailsRouter);
+
+app.use("/oemspecs", OEM_SpecsRoute);
+
+
 
 
 app.listen(process.env.port, async()=>{
