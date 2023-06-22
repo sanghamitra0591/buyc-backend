@@ -4,9 +4,9 @@ const app= express();
 
 const cors= require("cors");
 
-const { connection } = require("./Configs/db");
+const { connection } = require("./configs/db");
+const { validator } = require("./midddlewares/Validator.Middleware");
 const { UserRouter } = require("./Routes/User.Route");
-const { validator } = require("./Midddlewares/Validator.Middleware");
 
 app.use(cors({
     origin: "*"

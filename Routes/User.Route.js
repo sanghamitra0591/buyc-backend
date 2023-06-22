@@ -1,4 +1,4 @@
-const { UserModel } = require("../Models/User.Model");
+const { UserModel } = require("../models/User.Model");
 
 require("dotenv").config();
 
