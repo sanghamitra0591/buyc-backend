@@ -1,5 +1,5 @@
 const express= require("express");
-const { OEM_SpecsModel } = require("../Models/OEM-specs.Model");
+const { OEM_SpecsModel } = require("../models/OEM-specs.model");
 
 const OEM_SpecsRoute= express.Router();
 
