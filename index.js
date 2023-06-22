@@ -1,10 +1,10 @@
 const express= require("express");
 
-const { connection } = require('./configs/db');
-const { validator } = require("./midddlewares/Validator.middleware");
-const { UserRouter } = require("./routes/User.Route");
-const { carDetailsRouter } = require("./routes/carDetails.route");
-const { OEM_SpecsRoute } = require("./routes/OEM-specs.route");
+const { connection } = require('./Configs/db');
+const { validator } = require("./Midddlewares/Validator.middleware");
+const { UserRouter } = require("./Routes/User.Route");
+const { carDetailsRouter } = require("./Routes/carDetails.route");
+const { OEM_SpecsRoute } = require("./Routes/OEM-specs.route");
 
 
 const app= express();

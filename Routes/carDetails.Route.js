@@ -1,6 +1,6 @@
 const express= require("express");
-const { CarDeatilsModel } = require("../models/CarDetails.model");
-const { Marketplace_Inventory_MOdel } = require("../models/Marketplace_Inventory.model");
+const { CarDeatilsModel } = require("../Models/CarDetails.model");
+const { Marketplace_Inventory_MOdel } = require("../Models/Marketplace_Inventory.model");
 
 const carDetailsRouter=  express.Router();
 
