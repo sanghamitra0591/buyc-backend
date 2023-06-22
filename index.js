@@ -4,7 +4,8 @@ const app= express();
 
 const cors= require("cors");
 
-const { connection } = require("./configs/db");
+const { connection } = require('./configs/db');
+
 const { validator } = require("./midddlewares/Validator.middleware");
 const { UserRouter } = require("./Routes/User.Route");
 
