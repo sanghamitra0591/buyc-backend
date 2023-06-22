@@ -2,7 +2,7 @@ const mongoose= require("mongoose");
 
 require("dotenv").config();
 
-const connection= mongoose.connect("mongodb+srv://sanghamitra:sanghamitra@cluster0.cfmsy59.mongodb.net/attryb");
+const connection= mongoose.connect(process.env.mongo_url);
 
 module.exports= {
     connection
