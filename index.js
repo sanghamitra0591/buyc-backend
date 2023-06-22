@@ -1,6 +1,6 @@
 const express= require("express");
 
-const { connection } = require('./configs/db');
+const connection = require('./configs/db');
 const { validator } = require("./midddlewares/Validator.middleware");
 const { UserRouter } = require("./routes/User.Route");
 const { carDetailsRouter } = require("./routes/carDetails.route");
