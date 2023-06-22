@@ -34,12 +34,12 @@ app.use("/oemspecs", OEM_SpecsRoute);
 
 
 
-app.listen(process.env.port, async()=>{
+app.listen(8080, async()=>{
     try {
         await connection;
         console.log("Connected to Database");
     } catch (error) {
         console.log("Unable to connect DB");
     }
-    console.log(`Running at port ${process.env.port}`);
+    console.log(`Running at port 8080`);
 })
