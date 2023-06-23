@@ -9,7 +9,7 @@ const carDetailsSchema= mongoose.Schema({
     Marketplace_Inventory_id: String
 })
 
-const CarDeatilsModel= mongoose. connect("cardetail", carDetailsSchema);
+const CarDeatilsModel= mongoose.model("cardetail", carDetailsSchema);
 
 module.exports= {
     CarDeatilsModel
